@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_casamento_Rsvp" modelAttribute="rsvp" path="/rsvps" render="${empty dependencies}" z="pTFWwQKXtmrUe6N0DgBDlm/6MZo=">
+        <field:input field="codigo" id="c_com_casamento_Rsvp_codigo" max="30" min="1" required="true" z="Abaj8GacIe4WIjCMSxrqWhcNeBY="/>        
+        <field:input field="email" id="c_com_casamento_Rsvp_email" max="30" validationMessageCode="field_invalid_email" z="INJjXXbSmT96BN0HQT5LXv5+3bc="/>
+        <field:input field="atendido" id="c_com_casamento_Rsvp_atendido" validationMessageCode="field_invalid_integer" z="cY4SzklONW07lKGUk5CuluwpsP4="/>
+        <field:textarea field="observacao" id="c_com_casamento_Rsvp_observacao" z="xL1iOoSaS72Z2hpHl4ZSUT+aClg="/>
+        <field:datetime dateTimePattern="${rsvp_dataatendimento_date_format}" field="dataAtendimento" id="c_com_casamento_Rsvp_dataAtendimento" z="W1rhYXvdWqNnzUplgPgZMENqBzk="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_casamento_Rsvp" render="${not empty dependencies}" z="lGxGejxOIz9P4UANcCqwBVITEnM="/>
+</div>

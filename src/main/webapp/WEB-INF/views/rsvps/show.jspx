@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_casamento_Rsvp" object="${rsvp}" path="/rsvps" z="pdrZR7jvblw/NEDTztAzCVWKzd4=">
+        <field:display field="codigo" id="s_com_casamento_Rsvp_codigo" object="${rsvp}" z="4lxPnZA4s9wAD6gHiZ+MF5NnB28="/>
+        <field:display field="email" id="s_com_casamento_Rsvp_email" object="${rsvp}" z="NWAW0PUHJi4WraRr1TopwChipPM="/>
+        <field:display field="atendido" id="s_com_casamento_Rsvp_atendido" object="${rsvp}" z="jkrSthV9unjlNmz5dasCiooekbY="/>
+        <field:display date="true" dateTimePattern="${rsvp_dataatendimento_date_format}" field="dataAtendimento" id="s_com_casamento_Rsvp_dataAtendimento" object="${rsvp}" z="nkj0srRzJct1Nin35Xm2DiDEb3k="/>
+        <field:display field="observacao" id="s_com_casamento_Rsvp_observacao" object="${rsvp}" z="P5XbJjDUQwNKUEES3wt7rLRw01I="/>
+    </page:show>
+</div>

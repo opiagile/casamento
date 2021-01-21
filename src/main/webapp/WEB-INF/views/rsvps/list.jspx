@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_casamento_Rsvp" items="${rsvps}" z="L+kgKO6AnBmlDu22JXQtLou1wI8=">
+        <table:table data="${rsvps}" id="l_com_casamento_Rsvp" path="/rsvps" z="nLCbBxqD3fMmJdFpK3mBvG97HE0=">
+            <table:column id="c_com_casamento_Rsvp_codigo" property="codigo" z="aVOfKmdh0gRKdW396peft9YmrjE="/>
+            <table:column id="c_com_casamento_Rsvp_email" property="email" z="g6z5eMR0scF/JujaPy6nSBwAsd4="/>
+            <table:column id="c_com_casamento_Rsvp_atendido" property="atendido" z="user-managed"/>
+            <table:column date="true" dateTimePattern="${rsvp_confirmed_date_format}" id="c_com_casamento_Rsvp_dataAtendimento" property="dataAtendimento" z="user-managed"/>
+            <table:column id="c_com_casamento_Rsvp_observacao" property="observacao" z="QOzq8NEZmMAdsiVp42tmSpbnTng="/>
+        </table:table>
+    </page:list>
+</div>
